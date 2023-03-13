@@ -1,0 +1,13 @@
+{"manifest_version": 3,
+  "name": "help dts",
+  "version": "1.0.1",
+  "content_scripts": [
+    {
+      "css": ["my-styles.css"],
+      "js": ["script.js"],
+      "matches": [
+        "https://downtownschool.instructure.com/*"
+      ]
+    }
+  ]
+}
