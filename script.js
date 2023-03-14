@@ -11,11 +11,12 @@ let svgPath = `<svg class="svg" xmlns:inkscape="http://www.inkscape.org/namespac
 </g>
 </svg>`
 let svg = `
-<div id="container">
-  <div id="inner">` + svgPath + `</div>
-</div>`
+
+  <div id="inner">` + svgPath + `</div>`
 
 content.innerHTML = svg
+
+document.getElementsByClassName('ic-app-header__logomark-container')[0].setAttribute('id', 'container')
 
 /*let offset = 0;
 const element = document.querySelector('.path');
@@ -63,7 +64,7 @@ var mouse = {
     var e = event || window.event;
     this.x = e.clientX - this._x;
     this.y = (e.clientY - this._y) * -1;
-    this.x *= 50
+    this.x *= 100
     this.y *= 100
   },
   setOrigin: function(e) {

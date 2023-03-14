@@ -8,6 +8,11 @@
     height: 100px;
     padding-top: 7px;
     padding-bottom: 7px;
+    overflow: visible;
+}
+
+.ic-app-header__logomark{
+  overflow: visible !important;
 }
 
 .ic-app-header__logomark{
@@ -63,7 +68,7 @@
 }
 
 .path{
-  filter: drop-shadow(30px 30px 120px rgba(0, 0, 0, .4)) !important;
+  filter: drop-shadow(30px 30px 300px rgba(0, 0, 0, .4)) !important;
   box-shadow: #ff0000;
 }
 
