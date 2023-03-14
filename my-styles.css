@@ -10,11 +10,10 @@
     padding-bottom: 7px;
 }
 
-
 .ic-app-header__logomark{
     /*background-image: url('https://nanodroopytask.dtsmicah.repl.co/dts_inverted.svg') !important;*/
     background-image: none !important;
-    width: 70%;
+    /*width: 70%;*/
     height: 100% !important;
     margin-left: auto;
     margin-right: auto;
@@ -26,10 +25,10 @@
     stroke-dasharray: 400 !important;
     animation: dash 5s linear infinite alternate;
     -webkit-transition: stroke-dashoffset 100ms ease-out;
+    stroke: none !important;
+    fill: white !important;
 }
-.path{
-    stroke: #ffffff !important;
-}
+
 .svg:hover ~ .path{
     stroke: #ff0000 !important;
 }
@@ -39,6 +38,36 @@
 .path:hover{
     background: peru;
 }
+
+
+
+/*todo: get top tab to work: maybe just add class to the <a> element instead?*/;
+/* 3d stuff */
+#container {
+  perspective: 40px !important;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /*height: 100%;
+  width: 100%;*/
+}
+
+#inner {
+  background: none;
+  transition: transform 0.5s;
+  width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.path{
+  filter: drop-shadow(30px 30px 120px rgba(0, 0, 0, .4)) !important;
+  box-shadow: #ff0000;
+}
+
+
 /*
 @keyframes dash {
     to {
