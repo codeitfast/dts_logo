@@ -2,6 +2,11 @@
     --ic-brand-header-image: url('https://nanodroopytask.dtsmicah.repl.co/dts_inverted.svg')
 }
 
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('/Glober\ SemiBold\ Free.otf');
+}
+
 .ic-app-header__logomark-container{
     background: none !important;
     /*height: 62.6px;*/
@@ -24,7 +29,25 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
+
+  outline: 0 !important;
+  border: none !important;
+  -moz-outline-style: none !important;
 }
+
+.ic-app-header__logomark:active, .ic-app-header__logomark:focus, .ic-app-header__logomark-container:active, .ic-app-header__logomark-container:focus{
+  outline: none !important;
+    border: none !important;        
+    text-decoration: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    user-select: none;
+}
+
+
 
 .path{
     stroke-dasharray: 400 !important;
@@ -49,7 +72,7 @@
 /*todo: get top tab to work: maybe just add class to the <a> element instead?*/;
 /* 3d stuff */
 #container {
-  perspective: 50px !important;
+  perspective: 1px !important;
     display: flex;
   justify-content: center;
   align-items: center;
